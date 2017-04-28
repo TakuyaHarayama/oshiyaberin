@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -79,10 +81,6 @@ gem 'haml-rails'
 gem 'erb2haml'
 # Pagination
 gem 'kaminari'
-# Bootstrap style
-gem 'bootstrap-sass', '~> 3.3.5'
-gem 'font-awesome-rails'
-gem 'bootstrap_form'
 # Image uploader
 gem 'rmagick'
 gem 'paperclip'
