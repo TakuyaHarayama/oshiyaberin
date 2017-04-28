@@ -1,4 +1,173 @@
-#hoge
-  color: red
-  padding: 10px
-  border: solid 1px
+// リセット
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  font: inherit
+  list-style: none
+  vertical-align: baseline
+  text-decoration: none
+
+// ローディング
+#loader-bg
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0px
+  left: 0px
+  background: #FFF
+  z-index: 1
+  text-align: center
+
+#loading
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -150px
+  margin-top: -25px
+  img
+    width: 300px
+    height: 50px
+
+// メイン設定
+html
+  font-size: 62.5%
+  height: 100%
+
+body
+  width: 100%
+  height: 100%
+  font-size: 1.0rem
+  background-image: url("bk_01.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+.dis_ta
+  display: table
+  width: 100%
+  .dis_td
+    display: table-cell
+    vertical-align: middle
+
+#first
+  width: 100%
+  background-image: url("chara_01.png")
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: auto 90%
+  position: relative
+
+a#logo
+  position: absolute
+  display: block
+  width: 25%
+  top: 2%
+  left: 2%
+  img
+    max-width: 100%
+    width: 100%
+    height: auto
+
+#message
+  a.archive
+    display: block
+    width: 50px
+    height: 50px
+    text-align: center
+    line-height: 50px
+    color: #fff
+    background: #333333
+    font-size: 1.8rem
+    position: absolute
+    bottom: 134px
+    right: 0
+  .dis_ta
+    height: 130px
+    .name
+      font-size: 1.8rem
+      width: 130px
+      padding: 10px
+      text-align: center
+      img
+        display: block
+        width: 60%
+        height: auto
+        margin: 0 auto 10px auto
+    .commnet
+      font-size: 2.5rem
+      padding: 0 5%
+      position: relative
+      img
+        position: absolute
+        width: 17px
+        height: 10px
+        right: 15px
+        bottom: 15px
+      .tgt
+        opacity: 0
+        span
+          opacity: 0
+  .admin
+    position: absolute
+    bottom: 0
+    width: 100%
+    color: #fff
+    .name
+      background-color: #FF7BAC
+    .commnet
+      background-color: rgba(255,123,172,0.7)
+  .user
+    position: absolute
+    bottom: 0
+    width: 100%
+    color: #fff
+    display: none
+    .name
+      background-color: #3FA9F5
+    .commnet
+      background-color: rgba(63,169,245,0.7)
+  input[type=text]
+    display: block
+    width: 96%
+    height: 30px
+    padding: 6px 2%
+    font-size: 14px
+    line-height: 1.42857143
+    color: #555
+    background-color: #fff
+    background-image: none
+    border: 1px solid #ccc
+    border-radius: 4px
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+    margin-bottom: 1%
+  .button
+    display: inline-block
+    position: relative
+    float: right
+    input[type=submit]
+      float: right
+      display: block
+      padding: 6px 30px
+      font-size: 1.6rem
+      cursor: pointer
+      background: #3FA9F5
+      color: #fff
+      border-radius: 6px
+      border: none
+      height: 45px
+      -webkit-appearance: none
+      box-shadow: 0px 0px 4px 0px #fff
+      -webkit-box-shadow: 0px 0px 4px 0px #fff
+      -moz-box-shadow: 0px 0px 4px 0px #fff
+      font-weight: bold
+    i
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-top: -0.5em
+      margin-left: -6rem

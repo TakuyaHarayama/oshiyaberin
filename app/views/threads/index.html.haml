@@ -1,4 +1,31 @@
-%h1 Threads#index
-%p Find me in app/views/threads/index.html.haml
-
-= link_to "hoge", "javascript:void(0)", id: "hoge"
+-# #loader-bg
+-#   #loading
+-#     = image_tag "logo.png"
+#first.wrap
+  %a#logo{href: "#"}
+    = image_tag "logo.png"
+  #message
+    %a.archive{:href => "/"}
+      %i.fa.fa-file-text-o
+    .admin
+      .dis_ta
+        .dis_td.name
+          = image_tag "icon_01.png"
+          %p 鷲中宮　駅子
+        .dis_td.commnet
+          .tgt
+            初めまして。鷲中宮　駅子だよ。よろしくね！
+            %br
+            何でも質問に答えるよ！
+            = image_tag "sankaku.png", class: "sankaku"
+    .user
+      .dis_ta
+        .dis_td.name
+          = image_tag "icon_02.png"
+          %p あなた
+        .dis_td.commnet
+          %form
+            %input{placeholder: "ここに質問を入力してね", type: "text"}
+            .button
+              %input{type:"submit", value:"　  聞いてみる"}
+              %i.fa.fa-comment-o{"aria-hidden" => "true"}

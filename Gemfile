@@ -97,3 +97,4 @@ gem 'config'
 gem 'enum_help'
 gem 'rails-i18n'
 gem 'httparty'
+gem "font-awesome-rails"
