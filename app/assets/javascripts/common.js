@@ -34,6 +34,7 @@ $(function(){
     $('#first').css('background-image', "url('/assets/chara_02.png')");
     $('.admin').css('display', 'none');
     $('.user').css('display', 'block');
+    $('#js-input-text').focus();
   });
 });
 
