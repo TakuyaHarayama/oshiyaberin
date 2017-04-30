@@ -79,6 +79,8 @@ end
 # Haml
 gem 'haml-rails'
 gem 'erb2haml'
+# Modal
+gem 'remodal-rails'
 # Pagination
 gem 'kaminari'
 # Image uploader

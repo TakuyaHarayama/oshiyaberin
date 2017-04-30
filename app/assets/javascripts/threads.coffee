@@ -88,13 +88,30 @@ displayResponse = (record) ->
     $('.tgt').children('span:eq(' + i + ')').delay(50 * i).animate { 'opacity': 1 }, 50
     i++
   $('.tgt').append('<img class="sankaku" src="/assets/sankaku.png" />')
+  addLogData record
 
+addLogData = (record) ->
+  if !record?
+    return
+
+  html = ''
+  html += '<p>'
+  html += '<span>[あなた]</span>'
+  html += record.input_text
+  html += '</p>'
+  html += '<p>'
+  html += '<span>[鷲中宮　駅子]</span>'
+  html += record.res_text
+  html += '</p>'
+  html += '<hr>'
+
+  $('#js-log-text').append(html)
 
 # メッセージリスト表示
 #
 # @param [Array] メッセージリストデータ
 #
-addLogData = (results) ->
+setLogData = (results) ->
   $('#js-log-text').html('')
   if !results?
     return
@@ -102,11 +119,14 @@ addLogData = (results) ->
   html = ''
   for i in [0..results.length - 1]
     html += '<p>'
+    html += '<span>[あなた]</span>'
     html += results[i].input_text
     html += '</p>'
     html += '<p>'
+    html += '<span>[鷲中宮　駅子]</span>'
     html += results[i].res_text
     html += '</p>'
+    html += '<hr>'
 
   $('#js-log-text').append(html)
 
@@ -129,7 +149,7 @@ $ ->
         return
 
       # ログに書き込む処理
-      addLogData data
+      setLogData data
 
   # メッセージ入力テキストでEnterキー送信
   $('#js-input-submit').on 'click', (event) ->

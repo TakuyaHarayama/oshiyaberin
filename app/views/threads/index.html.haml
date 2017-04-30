@@ -5,7 +5,7 @@
   %a#logo{href: "#"}
     = image_tag "logo.png"
   #message
-    %a.archive{:href => "/"}
+    %a.archive{:href => '#modal'}
       %i.fa.fa-file-text-o
     .admin
       .dis_ta
@@ -30,5 +30,8 @@
               %input#js-input-submit{type:"submit", value:"　  聞いてみる"}
               %i.fa.fa-comment-o{"aria-hidden" => "true"}
 
-#modal-content{style: "display:none;"}
+.remodal{"data-remodal-id" => "modal"}
+  %button.remodal-close{"data-remodal-action" => "close"}
+  %h1 <<< ログ >>>
+  %hr
   #js-log-text
