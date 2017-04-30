@@ -25,7 +25,10 @@
           %p あなた
         .dis_td.commnet
           %form
-            %input{placeholder: "ここに質問を入力してね", type: "text"}
+            %input#js-input-text{placeholder: "ここに質問を入力してね", type: "text"}
             .button
-              %input{type:"submit", value:"　  聞いてみる"}
+              %input#js-input-submit{type:"submit", value:"　  聞いてみる"}
               %i.fa.fa-comment-o{"aria-hidden" => "true"}
+
+#modal-content{style: "display:none;"}
+  #js-log-text

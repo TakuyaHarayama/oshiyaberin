@@ -31,7 +31,8 @@ $(function(){
 // admin時.adminをクリックしたら
 $(function(){
   $('.admin').on('click',function(){
-    $('#first').css('background-image', 'url(img/chara_02.png)');
+    console.log('aa');
+    $('#first').css('background-image', "url('/assets/chara_02.png')");
     $('.admin').css('display', 'none');
     $('.user').css('display', 'block');
   });
