@@ -39,8 +39,6 @@ send = ->
       $('#js-input-text').val('')
       displayResponse data
       $('#js-input-text').attr('disabled', false)
-      # debug
-      console.log data
 
 # UID生成
 #
