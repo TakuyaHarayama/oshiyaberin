@@ -1,5 +1,3 @@
-require 'HTTParty'
-
 class ThreadsController < ApplicationController
   def index
   end
