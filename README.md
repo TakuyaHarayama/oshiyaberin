@@ -1,24 +1,13 @@
-# README
+# 概要
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- `user local`の無料APIを使ってRailsでノベルゲーム風な
+インターフェースを実装しました。
+- http://ai.userlocal.jp/document/free/top/
 
-Things you may want to cover:
+# 起動方法
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- git clone
+- bundle install
+- rails db:migrate
+- touch .env
+- .envファイルにAPIキーを設定 `USER_LOCAL_API_KEY=your api key`
