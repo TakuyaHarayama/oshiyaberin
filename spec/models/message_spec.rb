@@ -17,7 +17,7 @@ RSpec.describe Message, type: :model do
   describe 'validation' do
     context 'with invalid uid' do
       let(:uid) { '' }
-      it { is_expected.to be_valid }
+      it { is_expected.to be_invalid }
     end
   end
 end
