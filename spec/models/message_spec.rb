@@ -14,5 +14,10 @@
 require 'rails_helper'
 
 RSpec.describe Message, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'validation' do
+    context 'with invalid uid' do
+      let(:uid) { '' }
+      it { is_expected.to be_invalid }
+    end
+  end
 end
