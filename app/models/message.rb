@@ -12,4 +12,5 @@
 #
 
 class Message < ApplicationRecord
+  validates :uid, presence: true
 end
